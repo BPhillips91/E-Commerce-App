@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item android:title="Title">
+            <menu>
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/fresh_in"
+
+            android:title="Dat New-New" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/top_seller"
+            android:title="Dat Fire" />
+
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/prices"
+            android:title="Dat Price" />
+        </menu>
+    </item>
+
+    <item android:title="Flex on 'em">
+        <menu>
+            <item
+                android:id="@+id/nav_bookface"
+                android:icon="@drawable/book_face"
+                android:title="BookFace"
+                android:actionProviderClass="android.widget.ShareActionProvider"
+                />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/twatter"
+                android:title="Twatter" />
+        </menu>
+    </item>
+
+</menu>

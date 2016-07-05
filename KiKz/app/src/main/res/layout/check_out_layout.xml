@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#000000"
+
+    tools:context="generalassemb.ly.kikz.CheckOut"
+    >
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email_et"
+        android:textColor="#ffffff"
+        android:hint="Enter your Email"
+        android:textColorHint="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#eb1e26"
+        android:textColor="#ffffff"
+        android:text="Submit"
+        android:id="@+id/submit_button"
+        android:layout_below="@+id/email_et"
+        android:layout_alignRight="@+id/email_et"
+        android:layout_alignEnd="@+id/email_et" />
+    <TextView
+        android:id="@+id/finish_dialog"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/final_dialog"
+
+        android:textColor="#ffffff"
+        android:textSize="75sp"
+        android:layout_alignBottom="@+id/email_et"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/finish"
+        android:text="DONE!"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/submit_button"
+        android:layout_alignStart="@+id/submit_button" />
+
+</RelativeLayout>

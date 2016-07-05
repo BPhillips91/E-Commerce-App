@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Whatcha tryna sort by?">
+        <menu>
+            <item
+                android:id="@+id/fresh_in"
+                android:icon="@drawable/fresh_in"
+
+                android:title="Dat New-New" />
+
+            <item
+                android:id="@+id/top_seller"
+                android:icon="@drawable/top_seller"
+                android:title="Fire" />
+
+            <item
+                android:id="@+id/prices"
+                android:icon="@drawable/prices"
+                android:title="Low-High" />
+            <item
+                android:id="@+id/prices_high"
+                android:icon="@drawable/prices"
+                android:title="High-Low"/>
+        </menu>
+    </item>
+
+    <item android:title="Flex on 'em">
+        <menu>
+            <item
+                android:id="@+id/nav_bookface"
+                android:icon="@drawable/book_face"
+                android:title="BookFace"
+                android:actionProviderClass="android.widget.ShareActionProvider"
+                />
+            <item
+                android:id="@+id/nav_twatter"
+                android:icon="@drawable/twatter"
+                android:title="Twatter" />
+        </menu>
+    </item>
+
+</menu>

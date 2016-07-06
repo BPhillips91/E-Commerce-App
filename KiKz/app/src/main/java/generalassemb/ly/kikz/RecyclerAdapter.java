@@ -40,8 +40,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.myView
         //TODO setup images from picasso to use for shoeImage
         Picasso.with(this.context)
                 .load(imgURL)
-                .resize(50,50)
-                .onlyScaleDown()
                 .into(holder.shoeImage);
         //holder.shoeImage.setImageResource(R.mipmap.shoe1_thumbnail);
         holder.shoeName.setText(shoesList.get(position).getSHOE_NAME());
